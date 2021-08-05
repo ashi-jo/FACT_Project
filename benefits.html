@@ -38,8 +38,7 @@
 </head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
+    <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container align-items-center justify-content-center justify-content-md-between">
       <div class="row">
@@ -64,12 +63,17 @@
       
       <nav id="navbar" class="navbar order-lg-0">
         <ul class="text-center">
-          <li class="dropdown"><a href="/"><span>Home</span></a>
+          <li class="dropdown"><a href="./index.html"><span>Home</span></a>
             <ul>
-              <li><a href="#fact">What is Fact ?</a></li>
-              <li><a href="./fact-for-you.html">How Can FACT work for you?</a></li>
-              <li><a href="./benefits.html">Benefits of Fact</a></li>
-              <li><a href="#caseStudy">Case Studies</a></li>
+              <li><a href="./index.html">What is Fact ?</a></li>
+              <li class="dropdown "><a href="#"><span>How Can FACT work for you?</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">For Farmers</a></li>
+                  <li><a href="#">For Consumers</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Benefits of Fact</a></li>
+              <li><a href="#">Case Studies</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="/aboutus"><span>About Us</span></a>
@@ -79,6 +83,12 @@
               <li><a href="#">Founders</a></li>
               <li><a href="#">Sponsers</a></li>
               <li><a href="#">Supporters</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/aboutus"><span>Get Involved</span></a>
+            <ul>
+              <li><a href="#">Individual Supporter</a></li>
+              <li><a href="#">Organizational Supporter</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="/aboutus"><span>News & Events</span></a>
@@ -103,12 +113,6 @@
               <li><a href="#">Open day resources</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="/aboutus"><span>Get Involved</span></a>
-            <ul>
-              <li><a href="#">Individual Supporter</a></li>
-              <li><a href="#">Organizational Supporter</a></li>
-            </ul>
-          </li>
           <li><a class="nav-link" href="/contact">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -117,79 +121,35 @@
   </header>
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(images/5.jpg)">
-          <div class="container">
-            <h3>Welcome to <span>Farmer and Consumer Technology</span></h3>
-            <a href="/contact" class="btn-get-started scrollto">Contact Us</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(images/slide-2.JPG)">
-          <div class="container">
-            <h3>Welcome to <span>Farmer and Consumer Technology</span></h3>
-           <a href="/contact" class="btn-get-started scrollto">Contact Us</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(images/slide-3.jpg)">
-          <div class="container">
-            <h3>Welcome to <span>Farmer and Consumer Technology</span></h3>
-           <a href="/contact" class="btn-get-started scrollto">Contact Us</a>
-          </div>
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-  </section><!-- End Hero -->
-  <div class="container " data-aos="fade-up">
+  <div class="container " data-aos="fade-up" id="benefits">
     <div class="row row-content">
       <div class="col-md-8 col-12" id="fact">
-        <h1>What is FACT ?</h1>
-        <p>
-          Empowering farmers by eliminating harmful farming practices and
-          ineffective agricultural supply chains in order to give them direct
-          access to the end consumer. 
-        </p>
+        <h1>Benefits of FACT ?</h1>
+        <p>Farmer and Consumer Technology (FACT) is a partnership between farmers and consumers
+           in which the responsibilities, risks and rewards of farming are shared</p>
            <img src="images/5.jpg" alt="FACT" width="95%">
         <br>
         <br class="d-none d-sm-block">
-        <h5>Vision</h5>
-        <p>A country where rural social entrepreneurs flourish and deliver greater sustainable financial and social impact</p>
-        <h5>Mission</h5>
-        <p>To empower farmers by creating livelihood opportunities through a sustainable ecosystem.</p>
-        <h5>Values</h5>
-        <p>Integrity & transparency Passion to serve Contagious sharing and collaboration Adaptability Empowered recreation
-          </p>
+        <h5>Objectives</h5>
+        <ul>
+            <li>To practice back yard farming with community farming</li>
+            <li>To become the self sustainable Village by MCNF</li>
+            <li>To become a leading producer of vegetables for neighboring communities</li>
+            <li>To reach the point of sustainable profitability</li>
+            <li>To give access to the right of knowledge to our farming</li>
+            <li>To create a Regenerative Gardening and Living eco-system </li>
+            <li>To help you live towards a healthier living</li>
+            <li>To create jobs and sustain local economy</li>
+        </ul>
       </div>
       <div class="col-md-4 col-12 side-section">
         <h6>In this Section</h6>
         <hr>
         <ul>
-          <li><a href="./benefits.html">Benefits of Fact</a></li>
-          <li><a href="#caseStudy">Case Studies</a>
+          <li>Case Studies
             <ul>
-              <li><a href="#caseStudy1">Young farmer’s initiative in Nalgonda</a> </li>
-              <li><a href="#caseStudy2">Jevanjyothi Hosur and Eternal joy</a></li>
+              <li>Young farmer’s initiative in Nalgonda </li>
+              <li>Jevanjyothi Hosur and Eternal joy</li>
             </ul>
           </li>
           <li>How CSA work for you?</li>
@@ -200,7 +160,7 @@
         <p>Join the CSA Network to help us promote a fairer,
            more transparent model of food production,
             where the risks and rewards are shared.</p>
-        <a href="/join-network" class="btn btn-get-started">Join FACT Network</a>
+            <a href="/join-network" class="btn btn-get-started">Join FACT Network</a>
         <br>
         <h6>Latest News</h6>
         <hr>
@@ -211,75 +171,7 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <section class="bg-light">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-md-12 col-xl-5">
-            <div class="card text-white" style="background-color: #27AE60; border-radius: 15px;">
-              <div class="card-body p-3">
-                <i class="fas fa-quote-left fa-2x mb-4"></i>
-                <p class="lead">How is it possible,that the man who provides our food goes to bed hungry himself?”
-                  </p>
-                <hr>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0">- Atchuta Rao</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- Cards section -->
-    <div class="row row-content" id="caseStudy">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="member" data-aos="fade-up" data-aos-delay="100" id="caseStudy1">
-          <h4 class="text-center">Young farmer’s initiative in Nalgonda</h4>
-          <div class="member-img">
-            <img src="images/card-1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="member-info">
-            <span>Rupani Ramesh with 75 cents he was able cultivate 40 different varieties of vegetable as
-               multi-crop able make around 2.5 lacs as profit now he is striving towards educating farmers to
-                learn mix row cultivation. He has also setup the "Sri Sedhya Rythu Seva Samstha" to
-               train the young farmers on the farming methods of mixed row vegetable cultivation.</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="member" data-aos="fade-up" data-aos-delay="100" id="caseStudy2">
-          <h4 class="text-center">evanjyothi Hosur and Eternal joy Home Hyderabad</h4>
-          <div class="member-img">
-            <img src="images/card-2.JPG" class="img-fluid" alt="">
-          </div>
-          <div class="member-info">
-            <span>We have raised 4.5 lacs through friends and capital one India to support Jevanjyothi Hosur
-               and Eternal joy Home Hyderabad to be self sustainable children homes. Our goal is two-fold:
-                To help the orphanage provide food for the children, thereby fighting malnutrition, and to teach
-                 sustainable farming to the community, which will help local families pull themselves out of poverty.
-                  </span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="member" data-aos="fade-up" data-aos-delay="100">
-          <h4 class="text-center">Community farming Khammam</h4>
-          <div class="member-img">
-            <img src="images/5.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="member-info">
-            <span><ul>
-             <li> Number of Farmer 30</li>
-             <li>Number of food crop 117 (Millets, Pluses, Fruits & vegetable and Flowers ect)</li>
-              <li>Number of consumer served 5700 food  every day open 12 centers </li>
-              <li>With indigenous farming practices that have helped shape sustainable farming systems</li>
-            </ul>
-              </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
   <!-- Section home content  -->
     

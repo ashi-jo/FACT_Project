@@ -320,10 +320,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
-.mobile-nav-toggle.bi-x {
-  color: black;
-}
-
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -624,6 +620,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.side-section a {
+  color: black;
+}
+
+/* -------BEnefits page */
+
+#benefits{
+  padding-top: 140px;
+}
+
+.btn-get-started {
+  background-color: #27AE60;
+  color: black;
+}
 
 /*--------------------------------------------------------------
 # Footer
