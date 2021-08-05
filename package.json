@@ -1,0 +1,14 @@
+{
+  "name": "fact-project",
+  "version": "1.0.0",
+  "description": "Farmer and consumer technology project of ESTAH society",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dikshita Kambri",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
