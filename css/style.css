@@ -133,11 +133,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .Input {
   border-radius: 10px;
-  height: 30px;
+  height: 31px;
+}
+
+.btn-dark {
+  position: relative;
+  right: 30px;
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+}
+.btn-dark i {
+  position: relative;
+  right: 4px;
+  color: white;
+  bottom: 2px;
 }
 
 .Input::-webkit-input-placeholder { 
-  font-family: FontAwesome;
   font-weight: normal;
   overflow: visible;
   vertical-align: top;
@@ -146,44 +159,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 2px;
   color: black;
 }
-.Input::-moz-placeholder  { 
-  font-family: FontAwesome;
-  font-weight: normal;
-  overflow: visible;
-  vertical-align: top;
-  display: inline-block !important;
-  padding-left: 5px;
-  padding-top: 2px;
-  color: black;
-}
-.Input:-ms-input-placeholder  { 
-  font-family: FontAwesome;
-  font-weight: normal;
-  overflow: visible;
-  vertical-align: top;
-  display: inline-block !important;
-  padding-left: 5px;
-  padding-top: 2px;
-  color: black;
-}
-#topbar.topbar-scrolled {
-  top: -40px;
-}
-#topbar3 {
-  background: #0059bf;
-  color: #fff;
-  height: 40px;
-  font-size: 16px;
-  font-weight: 600;
-  z-index: 996;
-  transition: all 0.5s;
-}
-#topbar3.topbar-scrolled {
-  top: -40px;
-}
-#topbar3 i {
-  padding-right: 6px;
-  line-height: 0;
+
+@media (max-height: 700px) {
+  .Input {
+    border-radius: 10px;
+    height: 31px;
+    width: 150px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -581,34 +563,32 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px;
 }
 
-.member {
-  display: block;
-  box-shadow: 0px 0.1px 0px 0.1px #444444;
-  background-color: #fff;
+.caseStudy {
+  height: 480px;
 }
 
-.member .member-img {
-  position: relative;
-  overflow: hidden;
+.caseStudy{
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   border-radius: 10px;
 }
 
-.member .member-info {
-  padding: 25px 15px;
+.caseStudy.member-info {
+  padding: 15px 15px;
 }
 
-.member h4 {
+.card-title {
   font-weight: 900;
-  margin-bottom: 5px;
   font-size: 18px;
   color: #555555;
+  padding: 15px;
 }
 
-.member .member-info span {
-  display: block;
+.card .member-info span {
   font-size: 13px;
   font-weight: 400;
-  color: #7c7c7c;
+  color: #000000;
 }
 
 @media (max-height: 700px) {
