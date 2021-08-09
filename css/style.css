@@ -121,15 +121,56 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #fff ;
-  color: black;
+  background: #fff;
+  color: #000;
   height: 100px;
   font-size: 16px;
   font-weight: 600;
   z-index: 996;
-  top: 30;
+  top: 20;
   transition: all 0.5s;
+} 
+  
+#topbar img {
+  width: 31%;
 }
+ 
+.input {
+  margin-top: 40px;
+}
+@media screen and (min-width:900px) {
+  #topbar{
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width:1024px) {
+  .Input {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  #topbar img {
+    width: 90px
+  }
+  .social {
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+    letter-spacing: 0px;
+  }
+  .fab {
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+}
+.social {
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+    letter-spacing: 10px;
+}
+
 .fab {
   padding-right: 20px;
   padding-bottom: 10px;
