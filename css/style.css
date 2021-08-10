@@ -607,10 +607,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px;
 }
 
-.caseStudy {
-  height: 480px;
-}
-
 .news {
   display: block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -642,15 +638,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
-@media (max-height: 700px) {
+@media (max-width: 750px) {
   .side-section {
     padding: 10px;
   }
   .row-content {
-    padding: 20px;
+    padding: 15px;
   }
 }
 
+@media (width: 768px) {
+  .side-section{
+    padding: 10px;
+  }
+  .row-content {
+    padding: 15px;
+  }
+}
 .side-section a {
   color: black;
 }
@@ -681,9 +685,10 @@ h1, h2, h3, h4, h5, h6 {
 .media {
   padding: 5px;
 }
-
-.aboout {
-  padding-left: 20%;
+@media (max-width:750px) {
+  .about-content {
+    padding: 0px 20px;
+}
 }
 
 .gallery {
@@ -725,6 +730,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Resources */
+
+.video-gallery iframe {
+  width: 560px;
+  height: 315px;
+}
+@media (max-width: 750px) {
+  .video-gallery iframe {
+    width: 350px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-gallery iframe {
+    width: 335px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-gallery iframe {
+    width: 300px;
+    height: 240px;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .video-gallery iframe {
+    width: 250px;
+    height: 140px;
+  }
+}
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -806,6 +844,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ff7220;
   color: #000000;
   margin-left: 40%;
+}
+@media (max-width: 750px) {
+  .getinvolved {
+    margin-left: 15%;
+  }
 }
 /*--------------------------------------------------------------
 # Footer
