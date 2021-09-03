@@ -40,6 +40,12 @@
 </head>
 
 <body>
+  <?php
+  include("_dbConnect.php");
+  include("newsletterSub.php");
+  ?>
+
+
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center">
     <div class="container align-items-center justify-content-center justify-content-md-between">
@@ -298,7 +304,8 @@
             <h4>Our Newsletter</h4>
             <p>Subscribe to get our Newsletter and know more about our upcoming events</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email" id="email">
+              <input type="submit" value="Subscribe" onclick="getEmail()">
             </form>
 
           </div>
@@ -335,6 +342,7 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script src="js/newsletter.js"></script>
 
 </body>
 
